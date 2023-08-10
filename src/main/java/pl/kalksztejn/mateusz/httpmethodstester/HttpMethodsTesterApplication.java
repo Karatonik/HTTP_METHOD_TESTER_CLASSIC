@@ -18,7 +18,6 @@ public class HttpMethodsTesterApplication {
             SpringApplication.exit(applicationContext, () -> 0);
         }
     }
-
     // Dodajemy hook do zamknięcia aplikacji przed zakończeniem
     static {
         Runtime.getRuntime().addShutdownHook(new Thread(HttpMethodsTesterApplication::shutdown));
